@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darsh Shah | Aerospace Simulation Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a31;
+      --panel-2: #172142;
+      --text: #e7ecff;
+      --muted: #a9b5de;
+      --accent: #58b6ff;
+      --accent-2: #7af0c3;
+      --line: #2a3769;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 20% 0%, #18264f 0%, var(--bg) 45%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .container {
+      width: min(1100px, 92vw);
+      margin: 0 auto;
+      padding: 30px 0 60px;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, var(--panel), var(--panel-2));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      color: var(--accent-2);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.9rem, 5vw, 2.8rem);
+      line-height: 1.15;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 1.06rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .meta a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px dotted var(--accent);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      grid-column: span 12;
+      background: linear-gradient(180deg, var(--panel), #101831);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+      color: #d9e4ff;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      color: #d6f4ff;
+    }
+
+    .muted { color: var(--muted); }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .skill-block {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .skill-block b {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent-2);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .project {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .project p { margin: 0 0 8px; }
+    .project p b { color: var(--accent); }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .short-portfolio {
+      border-left: 4px solid var(--accent);
+      padding-left: 14px;
+    }
+
+    @media (min-width: 860px) {
+      .card.span-6 { grid-column: span 6; }
+      .card.span-8 { grid-column: span 8; }
+      .card.span-4 { grid-column: span 4; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Aerospace Engineering Portfolio</p>
+      <h1>Darsh Shah</h1>
+      <p class="tagline">A simulation-focused Aerospace Engineer specializing in orbital mechanics, CFD, and trajectory modeling.</p>
+      <div class="meta">
+        <span>📍 Pune, Maharashtra</span>
+        <span>🔗 <a href="https://www.linkedin.com/in/darsh-shah-58609325a" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+        <span>✉️ <a href="mailto:darshshah0204@gmail.com">darshshah0204@gmail.com</a></span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>About Me</h2>
+        <p>I focus on building aerospace simulation models that connect first-principles physics with engineering decisions. My work spans orbital mechanics and CFD, including development of an orbit + reentry propagator with drag-based modeling and data-grounded validation. I am particularly interested in simulation-driven space systems, trajectory prediction, and converting complex dynamics into reliable, testable results for real-world aerospace applications.</p>
+      </article>
+
+      <article class="card">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-block">
+            <b>Simulation &amp; Engineering Tools</b>
+            ANSYS Fluent, SolidWorks, AutoCAD, Fusion 360, XFLR5, OpenRocket, STK
+          </div>
+          <div class="skill-block">
+            <b>Programming</b>
+            MATLAB, Python (NumPy, Matplotlib)
+          </div>
+          <div class="skill-block">
+            <b>Core Knowledge</b>
+            Orbital Mechanics, Aerodynamics, CFD, Space Systems
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Projects</h2>
+        <div class="projects">
+          <section class="project">
+            <h3>1) Orbit &amp; Reentry Propagator</h3>
+            <p><b>Problem:</b> Needed an end-to-end simulation framework to model orbital propagation and atmospheric reentry behavior.</p>
+            <p><b>Approach:</b> Implemented a two-body orbital mechanics solver and coupled it with drag-based reentry dynamics using ballistic coefficient terms.</p>
+            <p><b>Tools:</b> MATLAB/Python for propagation and analysis, STK for trajectory visualization.</p>
+            <p><b>Results:</b> Produced complete orbit-to-reentry profiles with interpretable altitude, velocity, and decay trends.</p>
+            <p><b>Validation:</b> Compared simulated descent behavior against real-world reentry references to check model realism.</p>
+          </section>
+
+          <section class="project">
+            <h3>2) CFD Bluff Body Simulation</h3>
+            <p><b>Problem:</b> Quantify aerodynamic drag behavior around a bluff body in subsonic flow.</p>
+            <p><b>Approach:</b> Built CAD geometry, generated refined near-wall and wake mesh regions, and solved steady RANS cases under realistic boundary conditions.</p>
+            <p><b>Tools:</b> ANSYS Fluent (meshing + solver), post-processing for force and wake-field interpretation.</p>
+            <p><b>Results:</b> Estimated drag coefficient and flow separation structures; identified wake-driven drag trends.</p>
+            <p><b>Validation:</b> Benchmarked drag coefficient range against accepted literature/experimental values for comparable geometries.</p>
+          </section>
+
+          <section class="project">
+            <h3>3) SAE Aircraft Design</h3>
+            <p><b>Problem:</b> Design a competitive aircraft balancing aerodynamic efficiency, payload needs, and stability limits.</p>
+            <p><b>Approach:</b> Evaluated airfoil and planform choices, iterated geometry for lift/drag trade-offs, and integrated mass property constraints.</p>
+            <p><b>Tools:</b> SolidWorks, XFLR5, CAD-based design reviews.</p>
+            <p><b>Results:</b> Achieved a mission-oriented configuration with improved aerodynamic consistency and structural feasibility.</p>
+            <p><b>Validation:</b> Cross-checked aerodynamic outputs with stability margins and weight &amp; balance targets.</p>
+          </section>
+
+          <section class="project">
+            <h3>4) Rocketry Project</h3>
+            <p><b>Problem:</b> Build practical system-level understanding of launch vehicle subsystems and experimental control logic.</p>
+            <p><b>Approach:</b> Studied propulsion/avionics/recovery interfaces and developed Arduino-based experiments for sensing and subsystem behavior.</p>
+            <p><b>Tools:</b> OpenRocket, Arduino ecosystem, subsystem test setups.</p>
+            <p><b>Results:</b> Improved subsystem integration awareness and experimental readiness for rocketry workflows.</p>
+            <p><b>Validation:</b> Verified behavior through iterative test runs and parameter checks during prototype experiments.</p>
+          </section>
+        </div>
+      </article>
+
+      <article class="card span-6">
+        <h2>Experience &amp; Leadership</h2>
+        <ul>
+          <li><b>Astronomy Head:</b> Led astronomy initiatives, organized technical activities, and drove participation in applied aerospace learning.</li>
+          <li><b>Teamwork &amp; Competitions:</b> Collaborated in technical teams where design iteration, simulation review, and execution discipline were critical.</li>
+        </ul>
+      </article>
+
+      <article class="card span-6">
+        <h2>Publications &amp; Conferences</h2>
+        <ul>
+          <li>Fluid dynamics paper contribution (2025).</li>
+          <li>Conference participation including ICFAMEAD and related technical forums.</li>
+        </ul>
+      </article>
+
+      <article class="card span-4">
+        <h2>Education</h2>
+        <p><b>B.Tech Aerospace Engineering</b><br />MIT ADT University<br />2022–2026</p>
+      </article>
+
+      <article class="card span-8">
+        <h2>Future Goals</h2>
+        <p>To contribute to aerospace simulation and space systems roles focused on trajectory prediction, reentry modeling, and advanced CFD for mission reliability and performance analysis.</p>
+      </article>
+
+      <article class="card span-6">
+        <h2>LinkedIn “About” (Optimized)</h2>
+        <p class="muted">Simulation-focused Aerospace Engineer specializing in orbital mechanics, CFD, and trajectory modeling. I build physics-based models that connect analysis to practical engineering outcomes, including an orbit + reentry propagator with drag-based reentry dynamics and validation against real-world behavior. My technical work spans ANSYS Fluent, STK, MATLAB, and Python for simulation, visualization, and model verification. I am actively pursuing opportunities in aerospace simulation and space systems where rigorous modeling and data-driven problem solving are central to mission success.</p>
+      </article>
+
+      <article class="card span-6">
+        <h2>Short Portfolio (1-Page Recruiter Version)</h2>
+        <div class="short-portfolio">
+          <p><b>Darsh Shah</b> — Aerospace Engineering, MIT ADT University (2022–2026), Pune.</p>
+          <p><b>Positioning:</b> Simulation-focused Aerospace Engineer specializing in orbital mechanics, CFD, and trajectory modeling.</p>
+          <p><b>Core Strength:</b> Built orbit + reentry propagator using two-body mechanics and drag-based ballistic reentry modeling with data-grounded validation and STK visualization.</p>
+          <p><b>Technical Scope:</b> CFD bluff body analysis, SAE aircraft design (aerodynamics + weight &amp; balance), and Arduino-based rocketry subsystem experimentation.</p>
+          <p><b>Tools:</b> ANSYS Fluent, STK, SolidWorks, XFLR5, MATLAB, Python.</p>
+          <p><b>Goal:</b> Aerospace simulation / space systems roles focused on trajectory prediction, reentry modeling, and advanced CFD.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
